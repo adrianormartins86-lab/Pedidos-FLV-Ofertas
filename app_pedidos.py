@@ -882,6 +882,8 @@ elif perfil_navegacao == "Visão das Lojas":
     # -----------------------------------------------------------------
 
     df_loja["Cód.Prime"] = df_loja["Cód.Prime"].replace(0, None)
+    # 👇 ADICIONE ESTA LINHA AQUI 👇
+    df_loja = df_loja[["Cód.Prime", "Código", "Descrição", "Tipo", "Estoque", "Média 90d", "Qtde"]]
 
     with st.container(border=True):
         col_cfg_loja = {
