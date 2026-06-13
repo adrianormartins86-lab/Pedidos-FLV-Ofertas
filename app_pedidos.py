@@ -728,7 +728,7 @@ def _gerar_excel_formatado(df_editado_admin, filtro_setor):
 
     if filtro_setor in ("Box", "Pedra"):
         df_exp = df_exp.rename(columns={
-            "Código":      "COD.ICEASA",
+            "Código":      "CODIGO",
             "Descrição":   "PRODUTOS MOLICENTER",
             "TOTAL GERAL": "TOTAL",
             "R$Preço":     "PREÇO",
